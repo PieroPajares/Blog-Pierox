@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
+    <meta name="Keywords" content="piero pajares, sistemas operativos, arquitectura de redes y computadoras, sisope, redes">
+    <meta name="description" content="Creado con la intención de poder ayudar a mis compañeros de la escuela de Ingeniería de computación y sistemas :D">
+    <meta name="author" content="Pajares Orihuela, Piero Alejandro">
+    <title>Piero Pajares - Apoyando a mis compañeros</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.htm">Piero Pajares</a>
+    </div>
+    <div class="container">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.htm"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <li><a href="about.htm"><span class="glyphicon glyphicon-user"></span> Sobre mí</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-hand-right"></span> Tutoriales <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sistemas operativos</a></li>
+            <li><a href="#">Redes</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Oracle 11g</a></li>
+            <li><a href="#">MySQL</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Android</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="pokemon.htm">Pokémon Go</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="tecnico.htm">Técnicos</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Contacto</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Busca un tutorial">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container">
+  <legend>
+  <h1>Contacto:</h1>
+  </legend>
+  <div class="col-md-8 .col-xs-8">
+   <form role="form" action="php/contact.php" method="POST" id="contacto" title="Nombre">
+   <div class="messages"></div>
+   <div class="form-group">
+   <label for="nombre">Nombres :</label>
+   <input name="nombre" class="form-control" type="text" required="required" data-error="Sus nombres son requeridos" id="nombre" placeholder="Nombres" tabindex="1" title="Nombre">
+   <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+   <label for="email">Correo Electrónico :</label>
+   <input name="email" class="form-control" type="text" required="required" data-error="Su email es requerido" id="email" placeholder="Correo electrónico" tabindex="2" title="Email">
+   <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+   <label for="telefono">Teléfono :</label>
+   <input name="telefono" class="form-control" type="text" required="required" data-error="Su teléfono es requerido" id="telefono" placeholder="Teléfono" tabindex="3" title="Telefono">
+   <div class="help-block with-errors"></div>
+    </div>
+   <label for="Mensaje">Mensaje :</label>
+   <textarea name="mensaje" class="form-control" rows="5" id="mensaje" placeholder="Escriba su mensaje..." tabindex="6"></textarea>
+   <br>
+   <button type="submit" name="enviar" value="Enviar" class="btn btn-primary btn-lg btn-block">Enviar mensaje</button>
+   </form>
+  </div>
+  <div class="col-md-4 .col-xs-4">
+  <br>
+  <address>
+  <strong>Blog Piero</strong><br>
+  Trujillo - Perú<br>
+  Av. America sur 2096 Urb.Santa Maria<br>
+  <abbr title="Telefono">Teléfono:</abbr> (044) 20-08-68<br>
+  <abbr title="Celular">Celular:</abbr> 946526770
+  </address>
+  <address>
+  <strong>Correo electrónico:</strong><br>
+  <a href="mailto:#">pierox_xl@hotmail.com</a>
+  </address>
+  </div>
+  <div class="col-md-12 .col-xs-12">
+  <legend>
+  <h1>Ubicación en google maps:</h1>
+  </legend>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8103832159472!2d-79.02201706484139!3d-8.120779647278582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d7e0f8e2ae9%3A0x8e9809b45bfe635f!2sAv+Am%C3%A9rica+Sur+2096%2C+Trujillo+13007!5e0!3m2!1ses-419!2spe!4v1469750822266" class="mapa" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
+<br>
+<footer>
+    <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <p>Copyright © 2016 <strong><a href="index.htm" id="autor">Piero Pajares Orihuela</a></strong></p>
+      </div>
+      <div class="col-xs-6">
+        <ul class="list-inline text-right">
+        <li>Encuentrame en :</li>
+        <li><a href="https://www.facebook.com/Ingeniero.Piero" target="_blank"><img src="img/icono-facebook.png" alt="Síguenos en Facebook"/></a></li>
+        <li><a href="https://twitter.com/PieroAlejandr" target="_blank"><img src="img/icono-twitter.png" alt="Síguenos en Twitter"/></a></li>
+        <li><a href="https://www.youtube.com/channel/UCn2P81ApYhR4Gc3FzriqfdQ" target="_blank"><img src="img/icono-youtube.png" alt="Síguenos en Youtube"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>

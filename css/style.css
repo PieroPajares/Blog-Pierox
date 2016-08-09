@@ -1,0 +1,19 @@
+#autor{
+	color: #eee;
+	text-decoration: underline;
+}
+
+footer{
+	background: #4682B4;
+	color: #eee;
+	padding: 20px;
+}
+
+img.slider{
+	width: 100%; height: 100%;
+}
+
+iframe.mapa{
+
+	width: 100%; height: 400px;
+}
